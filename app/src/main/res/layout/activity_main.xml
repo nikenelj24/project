@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/emailpattern">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="129dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="217dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul"
+        app:srcCompat="@drawable/theo"
+        tools:ignore="MissingConstraints"
+        tools:srcCompat="@drawable/theo" />
+
+
+    <Button
+        android:id="@+id/btnFb"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="141dp"
+        android:drawableStart="@drawable/ic_facebook"
+        android:text="Facebook"
+        app:layout_constraintBottom_toTopOf="@+id/musik"
+        app:layout_constraintEnd_toStartOf="@+id/btnGoogle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        android:layout_width="141dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="222dp"
+        android:drawableStart="@drawable/ic_google"
+        android:text="Google"
+        app:layout_constraintBottom_toTopOf="@+id/btn_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/musik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="195dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="50dp"
+        android:text="--- MP3 Player ---"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_play"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="269dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFb"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_play_circle_filled_black_24dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_pause"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_play"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stop"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toTopOf="@+id/btn_play"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_pause_circle_filled_black_24dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_stop"
+        android:layout_width="58dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_pause"
+        app:layout_constraintTop_toTopOf="@+id/btn_pause"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_stop_black_24dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
